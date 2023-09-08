@@ -25,13 +25,12 @@ body{
 nav {
     background-image:url(https://cdn.vectorstock.com/i/preview-1x/46/89/christmas-baubles-vector-224689.jpg) ;
 }
-#xmas_star{
+#tree_star{
     font-size: 10pt;
     font-weight: bolder;
     padding-bottom: 10px;
     padding-top: 10px;
     line-break: auto;
-    font-weight: 300;
 }
 
 button{
