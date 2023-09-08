@@ -18,7 +18,7 @@ function treeLights(){
     let red = Math.floor(Math.random() * 256);
     let green = Math.floor(Math.random() * 256);
     let blue = Math.floor(Math.random() * 256);
-    let rGb = "RGB ("+ red +", "+ green +", "+ blue +")";
+    let rGb = "RGB("+ red +", "+ green +", "+ blue +")";
 
     document.getElementById("rgb_code_tree").textContent = rGb;
 
