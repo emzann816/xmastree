@@ -1,7 +1,7 @@
 let star = "**"
 
 for (let i = 0; i < 2; i++){
-    document.getElementById("tree_star").innerHTML 
+    document.getElementById("xmas_tree").innerHTML 
     += star + "<br>";
     star = star + "***";
 }
@@ -9,7 +9,7 @@ for (let i = 0; i < 2; i++){
 let starTwo = "*X*M*"
 
 for (let i = 0; i < 16; i++){
-    document.getElementById("tree_star").innerHTML 
+    document.getElementById("xmas_tree").innerHTML 
     += starTwo + "<br>";
     starTwo = starTwo + "A*S*";
 }
@@ -18,13 +18,13 @@ function treeLights(){
     let red = Math.floor(Math.random() * 256);
     let green = Math.floor(Math.random() * 256);
     let blue = Math.floor(Math.random() * 256);
-    let rGb = "RGB("+ red +", "+ green +", "+ blue +")";
+    let rGb = "rgb("+ red +", "+ green +", "+ blue +")";
 
     document.getElementById("rgb_code_tree").textContent = rGb;
 
     document.getElementById("rgb_code_tree").style.color = "white";
 
-    document.getElementById("tree_star").style.color = rGb;
+    document.getElementById("xmas_tree").style.color = rGb;
 
     document.getElementById("gifts").style.color = rGb;
     document.getElementById("gifts2").style.color = rGb;
