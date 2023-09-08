@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Cambria','san-serif';
+}
+
+body{
+    background-image: url(https://wallpaperbat.com/img/105125-green-christmas-wallpaper-top-free-green-christmas-background.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 100%;
+} 
+
+.fa-star{
+   border-color: black;
+
+}
+
+
+.fa-gift{
+    color: rgb(134, 13, 13);
+}
+
+nav {
+    background-image:url(https://cdn.vectorstock.com/i/preview-1x/46/89/christmas-baubles-vector-224689.jpg) ;
+}
+#xmas_star{
+    font-size: 10pt;
+    font-weight: bolder;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    line-break: auto;
+    font-weight: 300;
+}
+
+button{
+    color: black;
+    border-color: yellow;
+    font-weight: 300;
+}
+
+footer{
+    background-image: url(https://cdn.vectorstock.com/i/preview-1x/46/89/christmas-baubles-vector-224689.jpg);
+    background-repeat: repeat-x;
+    color: black;
+    margin-top: 4.5%;
+    font-size: 9.5pt;
+    font-style: italic;
+}

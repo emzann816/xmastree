@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvzZSFLDVT5I9t5zbKHaN28FflqDmz7LAuusGGqCY&s">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <title>XMAS-Tree</title>
+</head>
+<body class="bg-black">
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active text-dark link-primary" aria-current="page" href="index.html"><b class="fa-solid fa-tree text-danger
+                    ">  XMAS-Tree</b></a>
+              </li>
+             
+              </ul>
+              </div>
+              </div>
+    </nav>
+    
+    <center>
+    <div class="p-4"><i class="fa fa-star text-warning"></i></i></div>
+    <b><div id="tree_star"></div></b>
+    <div style="font-size: 25pt;" id="lines"> &nbsp;|| &nbsp;&nbsp;&nbsp; ||  &nbsp;</div>
+    <u><div style="font-size: 25pt;"><div id="lines2">  &nbsp; || &nbsp;&nbsp;&nbsp; || &nbsp; </div><i class="fa-solid fa-gift" id="gifts2"></i> <i class="fa-solid fa-gift" id="gifts"></i> <i class="fa-solid fa-gift" id="gifts3"></i> <i class="fa-solid fa-gift" id="gifts4"></i> </div></u>
+    <br>
+    <b><hr class="text-light"></b>
+    <b><p id="rgb_code_tree" class="text-warning"></p></b>
+    <button class="btn border text-dark bg-warning mb-4" onclick="on(); playSound();">Start Here</button>
+    <button class="btn border text-dark bg-warning mb-4" onclick="off(); pauseSound();">Pause Here</button>
+    </center>
+
+
+    <!-- footer -->
+  
+    <footer class="container-fluid w-100 py-4 flex-shrink-0">
+        <div class="container py-4">
+            <div class="row gy-3 gx-3">
+                <div class="col-lg-4 col-md-4">
+                  <p class="small text-muted pt-2 mb-0 text-dark"><h4 class="text-dark">Follow us </h4></p>
+                    <a href="https://www.facebook.com"  class="fa fa-facebook text-center text-light text-decoration-none p-3 m-auto rounded-circle" style="background-color: #3B5998; width: 60px; height: 60px; font-size: 30px;"></a>
+                      <a href="https://www.twitter.com" class="fa fa-twitter text-center text-light text-decoration-none p-3 ms-1 me-1 rounded-circle" style="background-color: #55ACEE; width: 60px; height: 60px; font-size: 30px;"></a>
+                        
+                        
+                    
+                    
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-6">
+              <div class="">
+                <h4 class="text-dark">Quick Link</h4>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="index.html" class="text-decoration-none text-dark">Home</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-decoration-none text-dark">About Us</a>
+                  </li>
+                  <li>
+                    <a href="index.html" class="text-decoration-none text-dark">Calculator</a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-decoration-none text-dark">Sample Outputs</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-6">
+              <div>
+                <h4 class="text-dark"> What we do</h4>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="weightingscale.html" class="text-decoration-none text-dark">Weighting Scale</a>
+                  </li>
+                  
+                  
+                  <li>
+                    <a href="index.html" class="text-decoration-none text-dark">  XMAS-TREE</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+                <div class="col-xl-3 col-lg-3 col-md-6">
+              <div>
+                <h4 class="text-dark">Newsletter</h4>
+                <div>
+                  <label for="Newsletter" class="form-label text-dark">Subscribe To Our Newsletter</label>
+                  <input type="text" class="form-control" Placeholder="Enter Your Email">
+                  <button class="btn btn-primary fa fa-paper-plane mt-3" data-bs-toggle="modal" id="exampleModalLabel2" data-bs-target="#exampleModal2">  Subscribe</button>
+                  
+                  
+                  <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel2"> Subscribe </h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                           Thank you for subcribing! 
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                          
+                          
+                        </div>
+                      </div>
+                </div>
+              </div>
+                </div>
+              </div>
+                </div>
+            </div>
+          
+          
+        </div>
+      </footer>
+
+
+    <script src="index.js"></script>
+</body>
+</html>
